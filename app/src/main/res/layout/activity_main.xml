@@ -1,8 +1,38 @@
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:id="@+id/container"/>
+
+        <ListView
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:id="@+id/leftDrawer"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:background="#E3D325"
+            />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+
 
     <EditText
         android:id="@+id/edit_message"
@@ -22,4 +52,4 @@
         />
 
 
-</LinearLayout>
+</RelativeLayout>
