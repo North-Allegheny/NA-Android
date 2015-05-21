@@ -1,5 +1,3 @@
 #NA-droid
 
-Personal Development repository for the NA Android app
-
-*No functionality! All code is experimental!*
+Project to be completed at a later date
